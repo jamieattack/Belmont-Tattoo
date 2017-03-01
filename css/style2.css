@@ -8,27 +8,7 @@ body {
 ol, ul {
 	list-style: none;
 }
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-.section-padding
-{
-	padding: 60px 0px;
-}
-h1, h2, h3, h4, h5, h6
-{
-	font-family: 'Lato', sans-serif;
-}
-/**media Queries**/
+
 .navbar-default {
     background-color: black;
 }
@@ -38,13 +18,7 @@ h1, h2, h3, h4, h5, h6
 	background-size: cover;
 	min-height: 610px;
 }
-.bg-color
-{
-    margin-top:50px;
-    padding-top:50px;
-    padding-bottom: 100px;
-	background-color: RGBA(0, 0, 0, 0.41);
-}
+
 
 .nav > li > a {
     padding: 0px;
@@ -124,160 +98,8 @@ h1, h2, h3, h4, h5, h6
 	text-transform: uppercase;
 	padding: 25px 0px;
 }
-.btn-submit
-{
-    background: #7E0B80;
-    border: 0px;
-    display: inline-block;
-    font-size: 16px;
-    text-transform: uppercase;
-    padding: 10px 40px;
-    font-weight: normal;
-    border-radius: 0px;
-    letter-spacing: 1px;
-    color: #333;
-    position: relative;
-    overflow: hidden;
-    -webkit-transition: all 0.4s ease-in-out;
-    -moz-transition: all 0.4s ease-in-out;
-    -o-transition: all 0.4s ease-in-out;
-    -ms-transition: all 0.4s ease-in-out;
-    transition: all 0.4s ease-in-out;
-    margin-top: 25px;
-    border: 2px solid  #7E0B80;
-}
 
-.btn-submit:hover {
-    background: #fff;
-}
-/****/
-#cta-2
-{
-	padding: 130px;
-}
-.cta-info
-{
-	border: 5px solid #7E0B80;
-	padding: 40px 0px;
-}
-.cta-info h3
-{
-	font-size: 24px;
-}
-.dec-tec
-{
-	font-size: 34px;
-}
-/****/
-#feature
-{
-	background-color: white;
-}
-.head-title
-{
-	color: #2b2b2b;
-	font-size: 32px;
-	font-weight: 700;
-}
-.botm-line
-{
-	background-color: #2b2b2b;
-	width: 34px;
-	height: 3px;
-	display: inline-block;
-}
-.section-title:hover .botm-line
-{
-	width: 70px;
-	/* For Safari 3.1 to 6.0 */
-    -webkit-transition-property: width;
-    -webkit-transition-duration: 2s;
-    -webkit-transition-timing-function: linear;
-    -webkit-transition-delay: 1s;
-    /* Standard syntax */
-    transition-property: width;
-    transition-duration: 2s;
-    transition-timing-function: linear;
-    transition-delay: 1s;
-}
-p
-{
-	color: #888;
-}
-.icon {
-    position: relative;
-    height: 48px;
-    width: 48px;
-    float: left;
-    margin-top: 14px;
-    margin-bottom: 20px;
-}
-.icon i
-{
-	font-size: 35px;
-}
-.icon-text {
-    margin-left: 73px;
-    padding:0px 25px 25px 0px;
-}
-h3.txt-tl {
-    font-size: 24px;
-    line-height: 1.35;
-}
-/****/
-.parallax {
-    background-attachment: fixed;
-    background-repeat: repeat-y;
-    background-position: center center;
-}
-.bg-image-2 {
-    background: url('../img/cta-banner.jpg') no-repeat center fixed;
-    -webkit-background-size: 100% auto;
-    -moz-background-size: 100% auto;
-    -o-background-size: 100% auto;
-    background-size: 100% auto;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
 
-.bg-image-3 {
-    background: url('../img/cta-banner2.jpg') no-repeat center fixed;
-    -webkit-background-size: 100% auto;
-    -moz-background-size: 100% auto;
-    -o-background-size: 100% auto;
-    background-size: 100% auto;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-.section {
-    position: relative;
-    padding: 88px 0 67px 0;
-    display: block;
-}
-.cta-txt h3 {
-    
-    font-size: 32px;
-    margin-bottom: 10px;
-    font-weight: 700;
-    color: #fff;
-}
-.cta-txt p
-{
-	color: #fff;
-}
-/****/
-.portfolio-box
-{
-	margin-bottom: 15px;
-}
-.padding-right-zero
-{
-	padding-right: 0px;
-}
 #contact
 {
 	background-color: black;
@@ -297,38 +119,12 @@ h3.txt-tl {
 	color: #000 !important;
 	font-weight: 600;
 }
-.btn-send
-{
-	border-radius: 0px;
-	color: #000;
-	background-color: #7E0B80;
-}
+
 a, a:hover
 {
 	color: #7E0B80;
 }
-.cont-title
-{
-	font-size: 24px;
-	padding:15px 0px;
-}
-.location-info p span {
-    display: inline-block;
-}
-.location-info p span {
-    width: 40px;
-    font-size: 24px;
-    color: #666;
-    vertical-align: middle;
-}
-.location-info p {
-    margin-bottom: 5px;
-}
-.location-info p {
-    font-size: 18px;
-    line-height: 32px;
-    color: #000;
-}
+
 .contact-icon-container {
     position: absolute;
     top: -38px;
@@ -423,40 +219,6 @@ a, a:hover
 }
 
 
-/* === section services === */
-
-section#services h2 {
-    font-size: 22px;
-    margin-bottom: 15px;
-    margin-top: 10px;
-    text-align:center;
-}
-section#services p {
-    margin:10px;
-}
-
-
-section#services .service-box {
-    text-align: center;
-    padding: 20px;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-}
-section#services .span3:hover {
-    background:#e3e3e3;
-}
-
-section#services .service-box h2 {
-    color: #f7f7f7;
-    font-weight: 700;
-}
-
-section#services.section.orange .service-box:hover {
-    background:#f36518;
-}
 
 
 
@@ -707,15 +469,16 @@ border: 2px solid #fff;
     margin:0 auto;
 }
 .team-leader-box{
-    width:30.66%;
-    margin-right: 3.82979%;
-    height: 490px;
+    width:31.66%;
+    margin-left:33%;
+    margin-top:150px;
+    height: 25%;
     overflow: hidden;
     text-align: center;
     float: left;
 }
 .team-leader-box span{
-    margin-bottom:24px;
+    margin-bottom:20px;
     display:block;
 }
 .team-leader-box:nth-of-type(3n+0){ margin:0;}
@@ -782,26 +545,11 @@ border: 2px solid #fff;
     -moz-transition:all 0.3s ease-in-out;
     -webkit-transition:all 0.3s ease-in-out;
 }
-.team-leader ul li a:hover, .team-leader ul li a:focus{
-    text-decoration:none;
-}
-.team-leader ul li a.fa-twitter:hover{
-    color:#55acee;
-}
-.team-leader ul li a.fa-facebook:hover{
-    color:#3b5998;
-}
-.team-leader ul li a.fa-pinterest:hover{
-    color:#cb2026;
-}
-.team-leader ul li a.fa-google-plus:hover{
-    color:#dd4b39;
-}
 
-
-
-.row2 {
-    margin-left:12%;
+.about {
+    margin:10px;
+    text-align:center;
+    padding-bottom:70px;
 }
 
 
@@ -809,7 +557,7 @@ border: 2px solid #fff;
 /* Contact
 ---------------------------------*/
 .main-section.contact{
-    padding:90px 0 100px;
+    padding:20px 0 50px;
 }
 
 .main-section.contact{
