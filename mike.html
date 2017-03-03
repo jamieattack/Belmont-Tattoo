@@ -1,34 +1,73 @@
+
 <!DOCTYPE HTML> 
 
 <html>
 
-	<head>
-		<!-- bootstrap -->
-		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <head>
+    <!-- bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-		<!-- css link -->
- 		<link rel="stylesheet" type="text/css" href="css/style2.css">
-		<link rel="stylesheet" href="css/animate.css">
-		
-		<!-- meta viewport -->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css link -->
+    <link rel="stylesheet" type="text/css" href="css/style2.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <!-- meta viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<!-- ====== -->
+    <!-- ====== -->
 
-		 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-	    <link rel="stylesheet" type="text/css" href="css/animate.css">
-	    <link rel="stylesheet" type="text/css" href="css/style2.css">
-
-
-	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link href="css/bootstrap-responsive.css" rel="stylesheet">
+     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+      <link rel="stylesheet" type="text/css" href="css/animate.css">
+      <link rel="stylesheet" type="text/css" href="css/style2.css">
+        <link rel="stylesheet" href="css/normalize.css">
 
 
-		<!-- ====== -->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+
+    </head>
+
+
+
+    <!-- ====== -->
+
+    <body>
+    <script type="text/javascript">
+  $(function () {
+    
+    var filterList = {
+    
+      init: function () {
+      
+        // MixItUp plugin
+        // http://mixitup.io
+        $('#portfoliolist').mixItUp({
+          selectors: {
+            target: '.portfolio',
+            filter: '.filter' 
+          },
+          load: {
+            filter: '.app'  
+          }     
+        });               
+      
+      }
+
+    };
+    
+    // Run the show!
+    filterList.init();
+    
+    
+  }); 
+  </script>
 
        
-          	<nav class="nav navbar-default navbar-fixed-top">
+            <nav class="nav navbar-default navbar-fixed-top">
                 <div class="container">
                     <div class="col-md-12">
                         <div class="navbar-header">
@@ -50,11 +89,11 @@
            
         </div>
 
-  		<!-- ============================================================================== -->
+      <!-- ============================================================================== -->
 
-	
+  
 
-		
+    
 
 
 
@@ -81,7 +120,7 @@
 
 </section>
 <!-- ==================================================================================================================
-										Portfolio
+                    about
 ================================================================================================================== -->
 
 
@@ -91,30 +130,358 @@
      </div>
      </div>
 
+
+   <!--================================================================================================================
+                    portfolio
+================================================================================================================== -->
+
+<link rel="stylesheet" href="css/normalize.css">
+
+
+  
+  <script type="text/javascript">
+  $(function () {
+    
+    var filterList = {
+    
+      init: function () {
+      
+        // MixItUp plugin
+        // http://mixitup.io
+        $('#portfoliolist').mixItUp({
+          selectors: {
+            target: '.portfolio',
+            filter: '.filter' 
+          },
+          load: {
+            filter: '.app'  
+          }     
+        });               
+      
+      }
+
+    };
+    
+    // Run the show!
+    filterList.init();
+    
+    
+  }); 
+  </script>
+
+
+  <div class="container">
+
+    <ul id="filters" class="clearfix">
+      <li><span class="filter active" data-filter=".app, .card, .icon">All</span></li>
+      <li><span class="filter" data-filter=".app">Black and Grey</span></li>
+      <li><span class="filter" data-filter=".card">Full Color</span></li>
+      <li><span class="filter" data-filter=".icon">Scetches</span></li>
+     
+    </ul>
+
+    <div id="portfoliolist">
+            
+
+      <div class="portfolio app" data-cat="app">
+        <div class="portfolio-wrapper">     
+          <img src="img/blackout.jpg" alt="" />
+          <div class="label">
+            <div class="label-text">
+              <a class="text-title">Blackout w/ Lines</a>
+              <span class="text-category">Black And Grey</span>
+            </div>
+            <div class="label-bg"></div>
+          </div>
+        </div>
+      </div>    
+      
+    
+            
+      <div class="portfolio app" data-cat="app">
+        <div class="portfolio-wrapper">
+          <img src="img/snake.jpg" alt="" />
+          <div class="label">
+            <div class="label-text">
+              <a class="text-title">Snakes</a>
+              <span class="text-category">Black and Grey</span>
+            </div>
+            <div class="label-bg"></div>
+          </div>
+        </div>
+      </div>      
+      
+      <div class="portfolio card" data-cat="card">
+        <div class="portfolio-wrapper">     
+          <img src="img/moose.jpg" alt="" />
+          <div class="label">
+            <div class="label-text">
+              <a class="text-title">Moose</a>
+              <span class="text-category">Full Color</span>
+            </div>
+            <div class="label-bg"></div>
+          </div>
+        </div>
+      </div> 
+
+       <div class="portfolio app" data-cat="app">
+        <div class="portfolio-wrapper">
+          <img src="img/flowers.jpg" alt="" />
+          <div class="label">
+            <div class="label-text">
+              <a class="text-title">Flowers</a>
+              <span class="text-category">Black and Grey</span>
+            </div>
+            <div class="label-bg"></div>
+          </div>
+        </div>
+      </div>      
+       
+      
+                                                                                
+        
+                                 
+         
+
+      
+      
+      <div class="portfolio icon" data-cat="icon">
+        <div class="portfolio-wrapper">     
+          <img src="img/sketch.jpg" alt="" />
+          <div class="label">
+            <div class="label-text">
+              <a class="text-title">1</a>
+              <span class="text-category">Sketch</span>
+            </div>
+            <div class="label-bg"></div>
+          </div>
+        </div>
+      </div>              
+
+                                         
+
+      <div class="portfolio icon" data-cat="icon">
+        <div class="portfolio-wrapper">     
+          <img src="img/sketch2.jpg" alt="" />
+          <div class="label">
+            <div class="label-text">
+              <a class="text-title">2</a>
+              <span class="text-category">Sketch</span>
+            </div>
+            <div class="label-bg"></div>
+          </div>
+        </div>
+      </div>  
+
+
+       <div class="portfolio app" data-cat="app">
+        <div class="portfolio-wrapper">
+          <img src="img/henta.jpg" alt="" />
+          <div class="label">
+            <div class="label-text">
+              <a class="text-title">Lines</a>
+              <span class="text-category">Black and Grey</span>
+            </div>
+            <div class="label-bg"></div>
+          </div>
+        </div>
+      </div>          
+      
+      
+      <div class="portfolio icon" data-cat="icon">
+        <div class="portfolio-wrapper">
+          <img src="img/sketch3.jpg" alt="" />
+          <div class="label">
+            <div class="label-text">
+              <a class="text-title">3</a>
+              <span class="text-category">Sketch</span>
+            </div>
+            <div class="label-bg"></div>
+          </div>
+        </div>
+      </div>                                                                                                                                
+
+      <div class="portfolio icon" data-cat="icon">
+        <div class="portfolio-wrapper">           
+          <img src="img/sketch4.jpg" alt="" />
+          <div class="label">
+            <div class="label-text">
+              <a class="text-title">4</a>
+              <span class="text-category">Sketch</span>
+            </div>
+            <div class="label-bg"></div>
+          </div>
+        </div>
+      </div>      
+      
+      
+      <div class="portfolio icon" data-cat="icon">
+        <div class="portfolio-wrapper">     
+          <img src="img/sketch5.jpg" alt="" />
+          <div class="label">
+            <div class="label-text">
+              <a class="text-title">5</a>
+              <span class="text-category">Sketch</span>
+            </div>
+            <div class="label-bg"></div>
+          </div>
+        </div>
+      </div>                                                
+      
+      <div class="portfolio card" data-cat="card">
+        <div class="portfolio-wrapper">     
+          <img src="img/peacock.jpeg" alt="" />
+          <div class="label">
+            <div class="label-text">
+              <a class="text-title">Peacock</a>
+              <span class="text-category">Full Color</span>
+            </div>
+            <div class="label-bg"></div>
+          </div>
+        </div>
+      </div>  
+
+
+       <div class="portfolio app" data-cat="app">
+        <div class="portfolio-wrapper">
+          <img src="img/rose.jpg" alt="" />
+          <div class="label">
+            <div class="label-text">
+              <a class="text-title">Rose</a>
+              <span class="text-category">Black and Grey</span>
+            </div>
+            <div class="label-bg"></div>
+          </div>
+        </div>
+      </div>  
+
+       <div class="portfolio card" data-cat="card">
+        <div class="portfolio-wrapper">     
+          <img src="img/skull.jpg" alt="" />
+          <div class="label">
+            <div class="label-text">
+              <a class="text-title">Skull</a>
+              <span class="text-category">Full Color</span>
+            </div>
+            <div class="label-bg"></div>
+          </div>
+        </div>
+      </div> 
+
+        <div class="portfolio app" data-cat="app">
+        <div class="portfolio-wrapper">
+          <img src="img/snake2.jpg" alt="" />
+          <div class="label">
+            <div class="label-text">
+              <a class="text-title">Snakes w/ Icon</a>
+              <span class="text-category">Black and Grey</span>
+            </div>
+            <div class="label-bg"></div>
+          </div>
+        </div>
+      </div>  
+
+       <div class="portfolio icon" data-cat="icon">
+        <div class="portfolio-wrapper">     
+          <img src="img/sketch6.jpg" alt="" />
+          <div class="label">
+            <div class="label-text">
+              <a class="text-title">6</a>
+              <span class="text-category">Sketch</span>
+            </div>
+            <div class="label-bg"></div>
+          </div>
+        </div>
+      </div>   
+
+        <div class="portfolio app" data-cat="app">
+        <div class="portfolio-wrapper">
+          <img src="img/sunflower.jpg" alt="" />
+          <div class="label">
+            <div class="label-text">
+              <a class="text-title">Flowers</a>
+              <span class="text-category">Black and Grey</span>
+            </div>
+            <div class="label-bg"></div>
+          </div>
+        </div>
+      </div> 
+
+       <div class="portfolio icon" data-cat="icon">
+        <div class="portfolio-wrapper">     
+          <img src="img/sketch7.jpg" alt="" />
+          <div class="label">
+            <div class="label-text">
+              <a class="text-title">7</a>
+              <span class="text-category">Sketch</span>
+            </div>
+            <div class="label-bg"></div>
+          </div>
+        </div>
+      </div> 
+
+
+        <div class="portfolio app" data-cat="app">
+        <div class="portfolio-wrapper">
+          <img src="img/tiger.jpg" alt="" />
+          <div class="label">
+            <div class="label-text">
+              <a class="text-title">Tiger</a>
+              <span class="text-category">Black and Grey</span>
+            </div>
+            <div class="label-bg"></div>
+          </div>
+        </div>
+      </div> 
+
+        <div class="portfolio card" data-cat="card">
+        <div class="portfolio-wrapper">     
+          <img src="img/hamsa.jpg" alt="" />
+          <div class="label">
+            <div class="label-text">
+              <a class="text-title">Hamsa Hand</a>
+              <span class="text-category">Full Color</span>
+            </div>
+            <div class="label-bg"></div>
+          </div>
+        </div>
+      </div>  
+
+        
+                    
+      
+    </div>
+    
+  </div><!-- container -->
+
    
 
           <!-- =================================================================================================
-      									Contact
+                        Contact
       ====================================================================================================== -->
 
 <div class="container-fluid">
 <section class="main-section contact" id="contact">
-	
+  
         <div class="row">
-        	
+          
                 <ul class="social-link">
-                	<li class="twitter"><a href="#"><i class="fa-twitter"></i></a></li>
+                  <li class="twitter"><a href="#"><i class="fa-twitter"></i></a></li>
                     <li class="facebook"><a href="#"><i class="fa-facebook"></i></a></li>
                     <li class="pinterest"><a href="#"><i class="fa-pinterest"></i></a></li>
                     <li class="gplus"><a href="#"><i class="fa-google-plus"></i></a></li>
                     <li class="dribbble"><a href="#"><i class="fa-dribbble"></i></a></li>
                 </ul>
             </div>
-        	
 
-		
+            </section>
+            </div>
+
+          
+
+    
 <!-- ==================================================================================================================
-			
+      
 =================================================================================================================== -->
 
 
@@ -127,15 +494,16 @@
 
 
 
-	<!-- jquery script -->
-	<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <!-- jquery script -->
+  <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
 
 
-	<!-- java script -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>	
+  <!-- java script -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> 
 
-	<script src="js/main.js"></script>
-	
-	</body>
-	
+  <script src="js/main.js"></script>
+
+  
+  </body>
+  
 </html>
