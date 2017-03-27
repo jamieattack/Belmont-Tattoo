@@ -294,7 +294,7 @@ color: #fff;
 }
 .link:hover {
     text-decoration:none;
-    color:grey !important;
+    color:#CDCDCD !important;
     background:#fff;
 }
 
@@ -341,7 +341,7 @@ Team
     -webkit-transition:all 0.3s ease-in-out;
 }
 .Portfolio-nav li a:hover{
-    background:grey;
+    background:#CDCDCD;
     color:#fff;
     text-decoration:none;
 }
@@ -372,8 +372,8 @@ Team
 }
 
 .Portfolio-nav li a.current{
-    background:grey;
-    color:#fff;
+    background:#CDCDCD;
+    color:#CDCDCD;
     text-decoration:none;
 }
 img {
@@ -489,9 +489,7 @@ img {
     padding:20px 0 50px;
 }
 
-.main-section.contact{
-    background:url(../img/bg-map.png) left 190px no-repeat;
-}
+
 .contact-info-box{
     font-size:15px;
     margin:0 0 14px 68px;
@@ -761,6 +759,7 @@ html {
         text-decoration:none;
         color:#666;
         cursor: pointer;
+        border-radius: 8px;
     }
     
     #filters li span.active {
@@ -806,7 +805,7 @@ html {
     }
 
         .portfolio .label-bg {
-            background: #grey;
+            background: #CDCDCD;
             width: 100%;
             height:100%;
             position: absolute;
